@@ -1,11 +1,45 @@
 /* font @import */
 
 :root {
-  /* css variables with theme colors,
-    names have to start with "--" */
-  --color-1: #b9af9e;
+--taupe: #473B35;
+--soft-amber: #CCBFB2;
+--dawn: #A5A298;
+--regent-gray: #81899F;
 }
 
 body {
-    
+  background: var(--regent-gray);
+  font-family: 'Oswald', sans-serif;
+  color: var(--taupe);   
+}
+
+#blue-cheese {
+  grid-area: image;
+  object-fit: cover;
+  height: 50vh;
+  width: 100vw;
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+    'header  image'
+    'lead image'
+    'signup image';
+    justify-items: stretch;
+    align-items: center;
+  }
+
+  #blue-cheese {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+#header {
+  
 }

@@ -1,6 +1,6 @@
 Product Launch Page
 ===
-
+Hello
 Build and deploy and single page "Product Launch Page"!
 
 ## Resources
